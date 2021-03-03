@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px 10px;
+}
+
+.all-card {
+  position: relative;
+}
+
+.card {
+  width: 28vw;
+  height: 25vh;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  padding: 30px 50px;
+  display: inline-block;
+  margin-left: 40px;
+  overflow: hidden;
+}
+
+.card:nth-child(1) {
+  background: rgb(249, 131, 154);
+  background: linear-gradient(
+    255deg,
+    rgba(249, 131, 154, 1) 0%,
+    rgba(253, 193, 158, 1) 100%
+  );
+}
+.card:nth-child(2) {
+  background: rgb(18, 138, 225);
+  background: linear-gradient(
+    255deg,
+    rgba(18, 138, 225, 1) 0%,
+    rgba(144, 200, 245, 1) 100%
+  );
+}
+.card:nth-child(3) {
+  background: rgb(3, 208, 180);
+  background: linear-gradient(
+    255deg,
+    rgba(3, 208, 180, 1) 0%,
+    rgba(126, 216, 209, 1) 100%
+  );
+}
+
+.card::before,
+.card::after {
+  content: " ";
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  height: 220px;
+  width: 220px;
+  opacity: 0.2;
+}
+
+.card::before {
+  left: 75%;
+  bottom: 20%;
+}
+.card::after {
+  left: 66%;
+  top: 40%;
+}
+
+.top-section-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-of-card {
+  text-transform: capitalize;
+  font-size: 1.4em;
+}
+
+.img-of-card:hover {
+  background-color: grey;
+}
+
+.number-section-card {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 15px 0px;
+}
+
+.bottom-section-card {
+  font-size: 1.4em;
+  padding: 40px 0px;
+}
