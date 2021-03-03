@@ -13,7 +13,7 @@ body {
 .card {
   width: 28vw;
   height: 25vh;
-  color: white;
+  color: #fff;
   border-radius: 10px;
   position: relative;
   padding: 30px 50px;
@@ -23,7 +23,6 @@ body {
 }
 
 .card:nth-child(1) {
-  background: rgb(249, 131, 154);
   background: linear-gradient(
     255deg,
     rgba(249, 131, 154, 1) 0%,
@@ -31,7 +30,6 @@ body {
   );
 }
 .card:nth-child(2) {
-  background: rgb(18, 138, 225);
   background: linear-gradient(
     255deg,
     rgba(18, 138, 225, 1) 0%,
@@ -39,7 +37,6 @@ body {
   );
 }
 .card:nth-child(3) {
-  background: rgb(3, 208, 180);
   background: linear-gradient(
     255deg,
     rgba(3, 208, 180, 1) 0%,
@@ -51,7 +48,7 @@ body {
 .card::after {
   content: " ";
   border-radius: 50%;
-  background-color: white;
+  background-color: #fff;
   position: absolute;
   height: 220px;
   width: 220px;
